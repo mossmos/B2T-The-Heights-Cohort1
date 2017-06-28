@@ -1,0 +1,10 @@
+h1, p{
+	color: red;
+}
+body{
+	background-color: green;
+}
+.bigAndGray{
+	font-size: 80px;
+	background-color:  gray;
+}
