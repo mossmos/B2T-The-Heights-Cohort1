@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<title></title>
+		</head>
+	<body>
+		<h2>Fruit Array</h2>
+	<!--whenever button is clicked will call it myFunction-->
+		<button onclick="myFunction()">Add more fruit</button> 
+		
+		<!--giving element id so it can be access by javascript-->
+		<p id="imput"></p>
+
+
+		<!--tells you you will write in javascript-->
+	<script type="text/javascript">
+		//assigns variables
+		var fruits = ["apple", "orange", "kiwi"]
+		//getting access to p element accessing text within it and putting fruits array with the word with
+		document.getElementById("imput").innerHTML = fruits.join(" with ");
+
+		//creating a function called myFunction
+		function myFunction (){
+			// puts words in prompt box
+			fruits.push (prompt ("Add more fruits"));
+			//removes 1st element in array
+			fruits.shift();
+			//sorts element in array
+			fruits.sort();
+			//displays the array and adds word with in between items
+			document.getElementById("imput").innerHTML = fruits.join(" with ");
+		}
+	</script>
+	</body>
+	</html>
