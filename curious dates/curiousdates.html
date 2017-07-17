@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		//assigns variable for today's date
+		var d = new Date();
+		//assigns variable for date in future
+		var d2 = new Date(2019,10,7);
+		
+		
+		//gets difference in year between d and d2
+		console.log ("The difference in the years is "+Math.abs(d2.getFullYear()-d.getFullYear()));
+		//gets difference in month between d and d2
+		console.log ("The difference in the months is "+ Math.abs(d2.getMonth()-d.getMonth()));
+		//gets difference in days between d and d2
+		console.log ("The difference in the days is " + Math.abs(d2.getDay()-d.getDay()));
+
+	</script>
+	</body>
+	</html>
