@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+
+	</head>
+	<body>
+	
+	<p id ="input"></p>
+	
+	<script type="text/javascript">
+		//assigns a variable
+		var date = new Date();
+
+		switch(date.getDay()){
+			case 0:
+				document.getElementById("input").innerHTML= "The day is Sunday ";
+				break;
+			case 1:
+				document.getElementById("input").innerHTML= "The day is Monday ";
+				break;
+			case 2:
+				document.getElementById("input").innerHTML= "The day is Tuesday ";
+				break;
+			case 3:
+				document.getElementById("input").innerHTML= "The day is Wednesday ";
+				break;
+			case 4:
+				document.getElementById("input").innerHTML= "The day is Thursday ";
+				break;
+			case 5:
+				document.getElementById("input").innerHTML= "The day is Friday ";
+				break;
+			case 6:
+				document.getElementById("input").innerHTML= "The day is Saturday ";
+				break;
+				
+			
+		}
+			
+	</script>
+	</body>
+	</html>
