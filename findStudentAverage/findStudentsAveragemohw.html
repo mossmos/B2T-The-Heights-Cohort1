@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+
+	<body>
+	<script type="text/javascript">
+		//assigns value to variables
+		var grades =[80, 77, 88, 95, 68];
+		
+		//assigns value to variables
+		var gradeTotal =grades[0]+grades[1]+grades[2]+grades[3]+grades[4];
+		//finds average grade (you can also use grades.length or 5)
+		var average = gradeTotal/grades.length;
+		
+		//uses if else to determine value of variables and print on console
+			if(average<60) {
+				console.log("Students' average of "+ average + " is a F");
+			} 
+						//value=average condition=> operator= less than signs(<>)60=value
+				else if(average>60 && average<69) { 
+					console.log("Students' average of "+ average + " is a D");
+			}
+				else if(average>70  && average<79){ 
+					console.log("Students' average of "+ average + " is a C");
+			}
+				else if(average>80 && average<89){ 
+					console.log("Students' average of "+average + " is a B");
+			}
+				else if(average>90 && average<100){ 
+					console.log("Students' average of "+ average + " is an A");
+			}
+
+			
+	</script>
+	</body>
+	</html>
