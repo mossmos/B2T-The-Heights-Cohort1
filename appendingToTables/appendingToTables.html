@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<table id= "myTable" border="1">
+		<tr>
+			<td>Clifford</td>
+			<td>Harris</td>
+		</tr>		
+	</table><br>
+		<!--lets user enter text input--> 
+		column 1: <input type="text" id="col1" ><br>
+		column 2: <input type="text" id="col2" ><br>
+		<!--creates input button-->
+		<input type="button" value="insertRow" onclick="insertRow()">
+		<!--allows you to type in javascript-->
+		<script type="text/javascript">
+			//assigns function
+			function insertRow(){
+				//assigns the variables
+				var table = document.getElementById('myTable');
+				var data1 = document.getElementById('col1').value;
+				var data2 = document.getElementById('col2').value;
+
+				var tr = document.createElement("tr");
+				var td1 = document.createElement("td");
+				var td2 = document.createElement("td");
+
+				td1.innerHTML = data1;
+				td2.innerHTML = data2;
+				tr.appendChild(td1);
+				tr.appendChild(td2);
+				table.appendChild(tr);
+
+			}
+
+
+		</script>
+	</body>
+	</html>
