@@ -6,16 +6,21 @@
 	</head>
 
 	<body>
+	<!--makes html id element-->
 		<p id= 'display'></p>
+		<!--makes input type and values-->
+
 		<form>
 			First name: <input type="text" id= "fname" value="Curtis"><br>
 			Last name: <input type="text" id= "lname" value="Jackson"><br>
 			<input type="button" value="Submit" onclick="getFormValue()">
 		</form>
 		<script type="text/javascript">
+			//makes function and assigns variables
 			function getFormValue(){
 				var fname = document.getElementById('fname').value;
 				var lname = document.getElementById('lname').value;
+				//lets following display on browser page
 				document.getElementById('display').innerHTML = "Hello " + fname + " " + lname;
 			}
 		</script>
